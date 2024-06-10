@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Prime Numbers in a Range:
+        - Write a function that finds and prints all prime numbers between 1 and 100. A
+        prime number is only divisible by 1 and itself</h1>
+    <script>
+        num=+prompt("prime numbers :enter one number then all prime numbers are executed in that range of number:")
+for(i=2;i<=num;i++){
+    flg=true;
+    for(p=2;p<=i-1;p++){
+        if(i%p==0){
+            flg=false;
+            
+        }
+    }
+    if(flg){
+        console.log(i)
+    }
+}
+
+
+
+    </script>
+</body>
+</html>
